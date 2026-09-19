@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de Guillermo Pereyra, desarrollador de software enfocado en backend, Android e inteligencia artificial." />
+    <meta name="theme-color" content="#080a0f" />
+    <title>Guillermo Pereyra — Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">GP</span><span class="brand-dot">.</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#stack">Stack</a>
+      </nav>
+      <a class="header-cta" href="https://github.com/SCAREDbelike" target="_blank" rel="noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy reveal">
+          <div class="availability"><span></span> Disponible para nuevos retos</div>
+          <p class="eyebrow">Hola, soy Guillermo Pereyra</p>
+          <h1>Construyo software que <em>resuelve</em>, no solo que funciona.</h1>
+          <p class="hero-description">
+            Desarrollador de software en formación, enfocado en backend, aplicaciones Android e inteligencia artificial. Convierto ideas en productos claros, útiles y bien construidos.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+            <a class="button button-ghost" href="https://github.com/SCAREDbelike" target="_blank" rel="noreferrer">github.com/SCAREDbelike</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Tarjeta de presentación de Guillermo">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-card">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <small>guillermo.dev</small>
+            </div>
+            <div class="terminal-content">
+              <p><span class="prompt">$</span> whoami</p>
+              <div class="identity">
+                <img src="https://avatars.githubusercontent.com/u/198695737?v=4" alt="Guillermo Pereyra" />
+                <div><strong>Guillermo</strong><span>Software Developer</span></div>
+              </div>
+              <p><span class="prompt">$</span> focus --current</p>
+              <div class="code-output" id="typed-output">backend · android · ai</div>
+              <p><span class="prompt">$</span> location</p>
+              <div class="code-output">Perú <span aria-hidden="true">⌁</span></div>
+            </div>
+          </div>
+          <div class="floating-tag tag-java">JAVA</div>
+          <div class="floating-tag tag-api">API</div>
+          <div class="floating-tag tag-ai">AI</div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true"><span></span> SCROLL</div>
+      </section>
+
+      <section class="about section" id="sobre-mi">
+        <div class="section-index reveal">01 / SOBRE MÍ</div>
+        <div class="about-grid">
+          <h2 class="reveal">Aprendo construyendo.<br /><span>Mejoro iterando.</span></h2>
+          <div class="about-copy reveal">
+            <p>
+              Soy estudiante de desarrollo de software en SENATI y me gusta entender lo que ocurre detrás de cada producto: su lógica, sus datos y la experiencia que entrega.
+            </p>
+            <p>
+              He trabajado en aplicaciones Android con Java y SQLite, además del componente backend de una plataforma de seguimiento de coaching fitness y nutrición. Ahora también exploro cómo integrar IA para crear soluciones más rápidas e inteligentes.
+            </p>
+            <div class="about-meta">
+              <div><strong>05°</strong><span>Ciclo en SENATI</span></div>
+              <div><strong>03+</strong><span>Proyectos construidos</span></div>
+              <div><strong>∞</strong><span>Curiosidad técnica</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="proyectos">
+        <div class="section-heading reveal">
+          <div class="section-index">02 / PROYECTOS</div>
+          <h2>Trabajo seleccionado</h2>
+          <p>Proyectos donde convierto requisitos reales en experiencias funcionales.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card featured reveal">
+            <div class="project-number">01</div>
+            <div class="project-main">
+              <div class="project-label">ANDROID · SQLITE</div>
+              <h3>Ecolim Premium</h3>
+              <p>Aplicación móvil para registrar, filtrar y administrar residuos, con autenticación local, historial y generación de reportes.</p>
+              <ul class="tech-list"><li>Java</li><li>SQLite</li><li>Android SDK</li></ul>
+            </div>
+            <a class="project-link" href="https://github.com/SCAREDbelike/TrabajoFinal" target="_blank" rel="noreferrer" aria-label="Ver Ecolim Premium en GitHub">↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-main">
+              <div class="project-label">ANDROID · CRUD</div>
+              <h3>App Proforma</h3>
+              <p>Gestión de productos y proformas con validaciones, cálculo de totales y operaciones de edición y eliminación.</p>
+              <ul class="tech-list"><li>Java</li><li>RecyclerView</li><li>Material UI</li></ul>
+            </div>
+            <a class="project-link" href="https://github.com/SCAREDbelike/appProforma" target="_blank" rel="noreferrer" aria-label="Ver App Proforma en GitHub">↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-main">
+              <div class="project-label">ANDROID · VALIDACIÓN</div>
+              <h3>App Mantenimiento</h3>
+              <p>Aplicación para registrar empleados con validación de datos, listado inmediato e integración continua en GitHub Actions.</p>
+              <ul class="tech-list"><li>Java</li><li>ListView</li><li>GitHub Actions</li></ul>
+            </div>
+            <a class="project-link" href="https://github.com/SCAREDbelike/appMantenimiento" target="_blank" rel="noreferrer" aria-label="Ver App Mantenimiento en GitHub">↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="stack section" id="stack">
+        <div class="section-index reveal">03 / HERRAMIENTAS</div>
+        <div class="stack-grid">
+          <div class="stack-copy reveal">
+            <h2>Mi caja de herramientas</h2>
+            <p>Tecnologías que uso para pasar de una idea a una solución que se pueda probar, mantener y mejorar.</p>
+          </div>
+          <div class="stack-cloud reveal" aria-label="Tecnologías">
+            <span class="large">Java</span><span>Android</span><span>SQLite</span><span class="accent">Backend</span><span>Git</span><span>GitHub</span><span class="large">APIs</span><span>Gradle</span><span class="accent">IA</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section reveal">
+        <p class="eyebrow">¿Construimos algo juntos?</p>
+        <h2>Tengo curiosidad.<br />Tengo código.<br /><em>Hablemos.</em></h2>
+        <a class="button button-primary" href="https://github.com/SCAREDbelike" target="_blank" rel="noreferrer">Encontrarme en GitHub <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Guillermo Pereyra</span>
+      <span>Diseñado y desarrollado con intención.</span>
+      <a href="#inicio">VOLVER ARRIBA ↑</a>
+    </footer>
+  </body>
+</html>
