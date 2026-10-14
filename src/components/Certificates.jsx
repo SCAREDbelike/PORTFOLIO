@@ -1,9 +1,9 @@
-import { SOCIAL, UX_COURSES } from '../data/portfolio.js';
+import { SOCIAL, UX_COURSES, NETACAD_CERTIFICATES } from '../data/portfolio.js';
 
 function Certificates() {
   return (
     <section className="certificates section" id="certificaciones" aria-labelledby="certificates-title">
-      <div className="section-index reveal">04 / CERTIFICACIÓN UX/UI</div>
+      <div className="section-index reveal">04 / CERTIFICACIONES</div>
       <div className="row gy-4 gx-lg-5 mb-5 align-items-end">
         <div className="col-lg-7 reveal">
           <p className="eyebrow">Experiencia de usuario · Diseño de interfaces</p>
@@ -50,6 +50,45 @@ function Certificates() {
         ))}
       </div>
       <p className="certificate-footnote">Los títulos están resumidos en español a partir del temario actual de Coursera. El enlace de arriba dirige a la credencial compartida; las ocho tarjetas describen cursos del programa, no ocho certificados independientes.</p>
+      <div className="netacad-section" aria-labelledby="netacad-title">
+        <div className="netacad-heading row gx-4 gy-3 align-items-end reveal">
+          <div className="col-lg-8">
+            <span className="eyebrow">Cisco Networking Academy · SENATI</span>
+            <h3 id="netacad-title">Seis logros. <em>Más herramientas para construir.</em></h3>
+            <p>Formación complementaria en programación, datos, redes, hardware, ciberseguridad e Internet de las Cosas. Cada constancia puede consultarse directamente en PDF.</p>
+          </div>
+          <div className="col-lg-4 d-flex justify-content-lg-end align-items-end">
+            <span className="netacad-total">06 <small>certificados obtenidos</small></span>
+          </div>
+        </div>
+
+        <div className="row g-4 netacad-grid">
+          {NETACAD_CERTIFICATES.map((certificate) => (
+            <div key={certificate.id} className="col-12 col-md-6 col-xl-4 reveal">
+              <article className="netacad-card h-100">
+                <a href={certificate.pdf} target="_blank" rel="noopener noreferrer" className="netacad-preview" aria-label={`Abrir PDF de ${certificate.title}`}>
+                  <img src={certificate.preview} alt={`Vista previa de la constancia de ${certificate.title} emitida por Cisco Networking Academy y SENATI`} loading="lazy" width="700" height="525" />
+                  <span className="netacad-preview-action" aria-hidden="true">Ver documento ↗</span>
+                </a>
+                <div className="netacad-content">
+                  <div className="netacad-meta">
+                    <span>{certificate.category}</span>
+                    <time dateTime={certificate.isoDate}>{certificate.date}</time>
+                  </div>
+                  <h4>{certificate.title}</h4>
+                  <p>{certificate.description}</p>
+                  <div className="netacad-bottom">
+                    <span>CISCO NETWORKING ACADEMY</span>
+                    <a href={certificate.pdf} target="_blank" rel="noopener noreferrer" aria-label={`Abrir certificado PDF de ${certificate.title}`}>
+                      Ver certificado PDF <span aria-hidden="true">↗</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

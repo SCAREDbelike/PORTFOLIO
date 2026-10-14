@@ -80,3 +80,19 @@ git push origin main
 ```
 
 Si esta carpeta recién extraída **no tiene** un directorio `.git`, crea un repositorio nuevo o copia sus archivos al proyecto Git que ya utilizas. Nunca hagas `git init` dentro de una copia sin tener claro a qué repositorio la vas a conectar.
+
+
+## Certificados Cisco Networking Academy
+
+Se han incorporado **seis constancias originales** de Cisco Networking Academy a través de SENATI, disponibles desde `public/certificados/` en PDF y miniatura WebP. La sección se genera desde `src/data/portfolio.js` mediante `NETACAD_CERTIFICATES` y `src/components/Certificates.jsx`.
+
+- Fundamentos de Python 1 (01/03/2025)
+- Introducción a la Ciencia de Datos (10/10/2024)
+- Conceptos Básicos de Hardware de Computadora (19/09/2024)
+- Conceptos básicos de redes (22/08/2024)
+- Introducción a Ciberseguridad (15/08/2024)
+- Introducción al Internet de las Cosas y Transformación Digital (05/08/2024)
+
+**Para aplicar al repositorio GitHub ya existente:** conservar la carpeta `.git` de `PORTFOLIO` y copiar el contenido de este proyecto encima, especialmente `src/` y `public/certificados/`. Ejecutar `npm install`, `npm run build`, `git add .`, `git commit -m "Agrego seis certificados Cisco NetAcad"` y `git push origin main`. No subir `node_modules/` ni `dist/`.
+
+Nota: los certificados contienen el nombre completo del titular, ya visible en los documentos originales. Publicarlos en un repositorio público hace esa información accesible por Internet.

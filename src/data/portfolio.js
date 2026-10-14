@@ -66,3 +66,14 @@ export const UX_COURSES = [
   { number: '07', name: 'UX para el bien social y portafolio profesional', detail: 'Proyectos accesibles, diseños para móvil y web, documentación y presentación de casos.', tag: 'Portafolio UX' },
   { number: '08', name: 'Búsqueda de empleo apoyada en inteligencia artificial', detail: 'Organización de postulaciones, currículum, entrevistas y herramientas de IA.', tag: 'Carrera + IA' },
 ];
+
+
+// Seis certificados aportados por el titular en formato PDF.
+export const NETACAD_CERTIFICATES = [
+  { id: 'python', title: 'Fundamentos de Python 1', category: 'Programación', date: '01 marzo 2025', isoDate: '2025-03-01', issuer: 'Cisco Networking Academy · SENATI', description: 'Fundamentos de programación y resolución de problemas con Python.', pdf: '/certificados/netacad-python.pdf', preview: '/certificados/netacad-python.webp' },
+  { id: 'data-science', title: 'Introducción a la Ciencia de Datos', category: 'Datos', date: '10 octubre 2024', isoDate: '2024-10-10', issuer: 'Cisco Networking Academy · SENATI', description: 'Primeros conceptos y aplicaciones de la ciencia de datos.', pdf: '/certificados/netacad-data-science.pdf', preview: '/certificados/netacad-data-science.webp' },
+  { id: 'hardware', title: 'Conceptos Básicos de Hardware de Computadora', category: 'Hardware', date: '19 septiembre 2024', isoDate: '2024-09-19', issuer: 'Cisco Networking Academy · SENATI', description: 'Componentes, arquitectura y fundamentos del hardware informático.', pdf: '/certificados/netacad-hardware.pdf', preview: '/certificados/netacad-hardware.webp' },
+  { id: 'networking', title: 'Conceptos básicos de redes', category: 'Redes', date: '22 agosto 2024', isoDate: '2024-08-22', issuer: 'Cisco Networking Academy · SENATI', description: 'Fundamentos de las redes informáticas y su funcionamiento.', pdf: '/certificados/netacad-networking.pdf', preview: '/certificados/netacad-networking.webp' },
+  { id: 'cybersecurity', title: 'Introducción a Ciberseguridad', category: 'Ciberseguridad', date: '15 agosto 2024', isoDate: '2024-08-15', issuer: 'Cisco Networking Academy · SENATI', description: 'Conceptos iniciales de seguridad digital y protección de sistemas.', pdf: '/certificados/netacad-cybersecurity.pdf', preview: '/certificados/netacad-cybersecurity.webp' },
+  { id: 'iot', title: 'Introducción al Internet de las Cosas y Transformación Digital', category: 'IoT', date: '05 agosto 2024', isoDate: '2024-08-05', issuer: 'Cisco Networking Academy · SENATI', description: 'Panorama del Internet de las Cosas y la transformación digital.', pdf: '/certificados/netacad-iot.pdf', preview: '/certificados/netacad-iot.webp' },
+];
